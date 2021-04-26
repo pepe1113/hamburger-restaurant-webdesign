@@ -102,7 +102,7 @@ a{
   display: block;
   width: 120px;
   height: 24px;
-  background-image: url(/images/logo_w@svg.svg);
+  background-image: url(../images/logo_w@svg.svg);
   background-size: contain;
   overflow: hidden;
   white-space: nowrap;
@@ -154,7 +154,7 @@ a{
 }
 
 .banner{
-  background-image: url(/images/header_desktop.png);
+  background-image: url(../images/header_desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -183,7 +183,7 @@ a{
 }
 @media (max-width:767px) {
   .banner{
-    background-image: url(/images/Bitmap.png);
+    background-image: url(../images/Bitmap.png);
   }
   .bannerSlogan{
     max-width:90%;
@@ -222,7 +222,7 @@ a{
 }
 .footerLogo{
   display: block;
-  background: url(/images/logo_l@svg.svg) no-repeat;
+  background: url(../images/logo_l@svg.svg) no-repeat;
   width: 245px;
   height: 49px;
   overflow: hidden;
@@ -340,7 +340,7 @@ a{
 .chefImg{
   width: 45%;
   margin:0 2%;
-  background-image: url(/images/main_chef_brown.png);
+  background-image: url(../images/main_chef_brown.png);
   background-position: 50% 30%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -439,7 +439,7 @@ a{
 }
 .formImg{
   border: 1px solid #CCCCCC;
-  background-image: url(/images/Map.png);
+  background-image: url(../images/Map.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 45%;
@@ -473,7 +473,7 @@ a{
 .formBtn{
   text-align: right;
 }
-.cancelBtn,.submitBtn{
+.cancelOrderBtn,.sendOrderBtn{
   color:#fff;
   padding: 6px 21px;
   background: rgba(0,0,0,0.35);
@@ -482,17 +482,17 @@ a{
   border: 0;
   margin-left: 11px;
 }
-.cancelBtn:hover,.submitBtn:hover{
+.cancelOrderBtn:hover,.sendOrderBtn:hover{
   cursor: pointer;
 }
-.submitBtn{
+.sendOrderBtn{
   background-color: #F56C23;
 }
-.submitBtn:hover{
+.sendOrderBtn:hover{
   background-color: #cc4700;
 }
 @media (max-width:767px) {
-  form{
+  .map form{
     padding: 0; 
   }
   .formImg{
@@ -510,6 +510,7 @@ a{
 @media (max-width:767px) {
   .cart{
     display: block;
+    max-width: 450px;
   }
 }
 .speciesSelect{
@@ -553,11 +554,12 @@ a{
 .searchInput{
   width: 100%;
   height: 32px;
-  border: none;
   outline: none;
   color: #3D1101;
   border: 2px solid #3D1101;
   background-color: rgba(0,0,0,0);
+  font-size: 20px;
+  padding: 5px;
 }
 .searchBtn{
   display: inline-block;
@@ -566,6 +568,9 @@ a{
   font-size: 19px;
   padding: 6px 7px;
   margin-bottom: 26px;
+}
+.searchBtn:hover{
+  color:#F56C23;
 }
 .itemList{
   display: flex;
@@ -632,6 +637,7 @@ a{
   color: #FF5E45;
   font-size: 16px;
   padding: 4px;
+  transition: all .4s;
 }
 .fa-shopping-cart{
   margin-right: 3px;
@@ -682,6 +688,7 @@ a{
 }
 .checkCartBtn:hover{
   transform: scale(1.1);
+  color: #F56C23;
 }
 .cartNum{
   position: absolute;
@@ -774,6 +781,7 @@ a{
   top: 67px;
 }
 .gotoSignupBtn,.submitBtn{
+  display: inline-block;
   width: 47%;
   background: rgba(0,0,0,0.35);
   border-radius: 3px;
@@ -782,10 +790,14 @@ a{
   border: 0;
   padding: 7px;
   margin-top: 15px;
+  text-align: center;
 }
 .submitBtn{
   background: #F56C23;
   margin-left: 4%;
+}
+.gotoSignupBtn:hover,.submitBtn:hover{
+  opacity: .8;
 }
 
 /* 註冊頁 REGISTER */
@@ -834,4 +846,11 @@ a{
   .registerInput{
     text-align: center;
   }
+}
+
+input:focus {
+  border-color:#3D1101;
+}
+input:disabled {
+  cursor: not-allowed;
 }
