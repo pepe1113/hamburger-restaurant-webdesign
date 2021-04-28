@@ -1,0 +1,63 @@
+@mixin text-hide {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 101%;
+}
+@mixin bg-center {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@mixin title-line {
+  content: '';
+  display: inline-block;
+  background-color: $primary-color;
+  height: 1px;
+  width: 12%;
+  position: absolute;
+  top: 50%;
+}
+@mixin button {
+  color: #fff;
+  padding: 6px 21px;
+  border-radius: 3px;
+  outline: none;
+  border: 0;
+  margin-left: 11px;
+}
+@mixin button-login {
+  display: inline-block;
+  width: 47%;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+  font-size: 14px;
+  color: #ffffff;
+  border: 0;
+  padding: 7px;
+  margin-top: 15px;
+  text-align: center;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+//父層要加上position:relatiive
+@mixin img-center {
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+//RWD pixel size
+@mixin under-pad {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: 320px) {
+    @content;
+  }
+}

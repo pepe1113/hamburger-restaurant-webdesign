@@ -1,0 +1,188 @@
+.container {
+  padding: 3%;
+  max-width: 1024px;
+  margin: 0 auto;
+  @include under-pad {
+    padding: 10% 5%;
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $header-bg-color;
+  z-index: 10;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  .logo {
+    display: block;
+    width: 120px;
+    height: 24px;
+    background-image: url(../images/logo_w@svg.svg);
+    background-size: contain;
+    @include text-hide;
+  }
+}
+
+.nav {
+  display: flex;
+  a {
+    color: #fff;
+    display: block;
+    margin-left: 31px;
+    &:hover {
+      color: #db4437;
+      transition: all 0.3s;
+    }
+  }
+
+  @include under-pad {
+    background-color: $header-bg-color;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 56px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    a {
+      margin: 0;
+      padding: 15px 0;
+      border-top: 1px solid #fff;
+    }
+  }
+}
+
+.navBtn {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  @include under-pad {
+    display: block;
+  }
+}
+
+.menushow .nav {
+  @include under-pad {
+    max-height: 150px;
+  }
+}
+
+.banner {
+  background-image: url(../images/header_desktop.png);
+  @include bg-center;
+  padding: 123px 0;
+  @include under-pad {
+    background-image: url(../images/Bitmap.png);
+  }
+  .bannerSlogan {
+    margin: 0 auto;
+    max-width: 460px;
+    padding: 22px;
+    margin: 20px auto;
+    color: #fff;
+    background-color: $banner-bg-color;
+    text-align: center;
+    @include under-pad {
+      max-width: 90%;
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 45px;
+      @include under-pad {
+        display: none;
+      }
+    }
+    .mobile {
+      display: none;
+      @include under-pad {
+        display: block;
+      }
+    }
+    p {
+      font-style: 16px;
+      margin-top: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+.footer {
+  text-align: left;
+  display: flex;
+  h3 {
+    font-size: $font-m;
+    margin-bottom: 18px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .about {
+    width: 32%;
+    margin-right: 5%;
+  }
+  .contact {
+    width: 32%;
+    margin-right: 5%;
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+      line-height: 22px;
+    }
+    a {
+      color: $primary-color;
+    }
+  }
+  @include under-pad {
+    display: block;
+    padding: 50px 11px;
+
+    .about,
+    .contact {
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+  }
+}
+
+.footerLogo-mobile {
+  @include under-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footerLogo {
+    display: block;
+    background: url(../images/logo_l@svg.svg) no-repeat;
+    width: 245px;
+    height: 49px;
+    @include text-hide;
+  }
+  .socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+    margin-top: 22px;
+    li {
+      margin-left: 11px;
+    }
+    .google {
+      color: $google-color;
+    }
+    .twitter {
+      color: $twitter-color;
+    }
+    .fb {
+      color: $fb-color;
+    }
+  }
+}

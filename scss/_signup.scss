@@ -1,0 +1,46 @@
+.register {
+  display: flex;
+  max-width: 620px;
+  position: relative;
+  padding-top: 50px;
+
+  .registerContract {
+    width: 48%;
+    margin-right: 4%;
+    span {
+      font-size: 18px;
+      text-align: left;
+      display: block;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left;
+    }
+  }
+  .registerInput {
+    width: 48%;
+    text-align: right;
+  }
+  .loginTitle {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-45px);
+  }
+
+  @include under-pad {
+    display: block;
+    .registerContract {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .registerInput {
+      width: 100%;
+    }
+    .registerInput {
+      text-align: center;
+    }
+  }
+}

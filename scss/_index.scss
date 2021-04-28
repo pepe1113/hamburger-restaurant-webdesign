@@ -1,0 +1,226 @@
+.featureTitle {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 3%;
+  position: relative;
+  &:before {
+    @include title-line;
+    left: 23%;
+    @include under-pad {
+      display: none;
+    }
+  }
+  &:after {
+    @include title-line;
+    right: 23%;
+    @include under-pad {
+      display: none;
+    }
+  }
+  @include under-pad {
+    margin-bottom: 10%;
+  }
+}
+
+.featureList {
+  display: flex;
+  justify-content: space-between;
+  @include under-pad {
+    display: block;
+  }
+}
+
+.featureItem {
+  width: 30%;
+  .item-img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .item-title {
+    font-size: 18px;
+    margin-bottom: 11px;
+  }
+  .item-txt {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+  }
+  @include under-pad {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
+
+.chef {
+  background-color: $primary-color;
+  width: 100%;
+  color: #fff;
+  .container {
+    display: flex;
+    padding: 0 2%;
+  }
+  .chefImg {
+    width: 45%;
+    margin: 0 2%;
+    background-image: url(../images/main_chef_brown.png);
+    @include bg-center;
+    background-position: 50% 30%;
+  }
+  .chefIntro {
+    text-align: left;
+    max-width: 40%;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 18px;
+      font-weight: 100;
+    }
+  }
+  .intro-name {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @include under-pad {
+    .container {
+      display: block;
+      padding: 0;
+    }
+    .chefImg {
+      width: 100%;
+      height: 420px;
+      margin: 0;
+    }
+    .chefIntro {
+      max-width: 100%;
+      padding: 10%;
+    }
+  }
+}
+
+.container-title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 37px;
+}
+.clientList {
+  display: flex;
+  justify-content: space-between;
+  @include under-pad {
+    display: block;
+  }
+}
+.clientItem {
+  width: 31%;
+  margin: 0 1%;
+  padding-left: 77px;
+  position: relative;
+  text-align: left;
+  line-height: 24px;
+  @include under-pad {
+    width: 100%;
+  }
+  img {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .c-title {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .c-context {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .c-name {
+    display: block;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: right;
+  }
+  &:hover {
+    img {
+      opacity: 0.7;
+    }
+  }
+}
+
+.map {
+  background-color: $light-bg-color;
+  form {
+    position: relative;
+    padding-left: 47%;
+    @include under-pad {
+      padding: 0;
+    }
+  }
+
+  .formImg {
+    border: 1px solid #cccccc;
+    background-image: url(../images/Map.png);
+    @include bg-center;
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include under-pad {
+      position: static;
+      width: 100%;
+      height: 386px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .formgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 14px;
+    label {
+      margin-bottom: 8px;
+    }
+    input {
+      padding: 8px 14px;
+      outline: none;
+      border: 1px solid #cccccc;
+      box-shadow: $shadowIn;
+      border-radius: 3px;
+    }
+    input[type='radio'] {
+      width: 10px;
+      margin-right: 30px;
+    }
+  }
+
+  .formBtn {
+    text-align: right;
+  }
+
+  .cancelOrderBtn {
+    @include button;
+    background: $cancel-btn-color;
+    &:hover {
+      cursor: pointer;
+      background-color: $cancel-btn-hover;
+    }
+  }
+  .sendOrderBtn {
+    @include button;
+    background-color: $btn-color;
+    &:hover {
+      cursor: pointer;
+      background-color: $btn-hover;
+    }
+  }
+}

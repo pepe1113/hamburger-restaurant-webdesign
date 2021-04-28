@@ -1,0 +1,21 @@
+//font
+$main-font: 'Noto Sans TC', sans-serif;
+$price-font: Arial Black;
+$font-m: 24px;
+
+//color
+$bg-color: rgba(239, 233, 231, 1);
+$light-bg-color: rgba(250, 250, 250, 0.7);
+$header-bg-color: rgba(0, 0, 0, 0.9);
+$banner-bg-color: rgba(0, 0, 0, 0.4);
+$primary-color: #3d1101;
+$fb-color: #3a5795;
+$twitter-color: #41abe1;
+$google-color: #db4437;
+$btn-color: #f56c23;
+$btn-hover: darken($btn-color, 20%);
+$cancel-btn-color: grayscale($btn-color);
+$cancel-btn-hover: darken($cancel-btn-color, 15%);
+
+$shadowIn: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+$shadowOut: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
