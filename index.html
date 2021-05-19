@@ -113,27 +113,33 @@
         <ul class="clientList">
           <li class="clientItem">
             <img src="images/avatar_1.png" alt="顧客感想" />
-            <span class="c-title">高雄一口吃</span>
-            <p class="c-context">
-              自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-            </p>
-            <span class="c-name"> -- 產品經理</span>
+            <div>
+              <p class="c-title">高雄一口吃</p>
+              <p class="c-context">
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </p>
+              <p class="c-name">-- 產品經理</p>
+            </div>
           </li>
           <li class="clientItem">
             <img src="images/avatar_2.png" alt="顧客感想" />
-            <span class="c-title">廟口小霸王</span>
-            <p class="c-context">
-              自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-            </p>
-            <span class="c-name"> -- 金身道士</span>
+            <div>
+              <p class="c-title">廟口小霸王</p>
+              <p class="c-context">
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </p>
+              <p class="c-name">-- 金身道士</p>
+            </div>
           </li>
           <li class="clientItem">
             <img src="images/avatar_3.png" alt="顧客感想" />
-            <span class="c-title">春天也來了</span>
-            <p class="c-context">
-              自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-            </p>
-            <span class="c-name"> -- 美麗萬分</span>
+            <div>
+              <p class="c-title">春天也來了</p>
+              <p class="c-context">
+                自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+              </p>
+              <p class="c-name">-- 美麗萬分</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -143,38 +149,40 @@
             我們的位置不太夠坐<br />
             要不要先定位呢？
           </h3>
-          <form action="">
+          <form>
             <div class="formImg"></div>
-            <div class="formgroup">
-              <label for="name">姓名</label>
-              <input id="name" type="text" placeholder="ex.王小明" name="name" />
-            </div>
-            <div class="formgroup">
-              <label for="phone">電話</label>
-              <input id="phone" type="number" placeholder="02-1234567" name="phone" />
-            </div>
-            <div class="formgroup">
-              <label for="email">信箱</label>
-              <input id="email" type="text" placeholder="example@gmail.com" name="email" />
-            </div>
-            <div class="formgroup">
-              <label for="peopleNum">人數</label>
-              <input id="peopleNum" type="number" name="peopleNum" />
-            </div>
-            <div class="formgroup radio">
-              <label for="isVegetarian">是否需要素食</label>
-              <div>
-                是<input id="isVegetarian" type="radio" value="true" name="isVegetarian" /> 否<input
-                  id="isVegetarian"
-                  type="radio"
-                  value="false"
-                  name="isVegetarian"
-                />
+            <div class="formContent">
+              <div class="formgroup">
+                <label for="name">姓名</label>
+                <input id="name" type="text" placeholder="ex.王小明" name="name" />
               </div>
-            </div>
-            <div class="formBtn">
-              <input type="button" class="cancelOrderBtn" value="取消" />
-              <input type="button" class="sendOrderBtn" value="送出" />
+              <div class="formgroup">
+                <label for="phone">電話</label>
+                <input id="phone" type="number" placeholder="02-1234567" name="phone" />
+              </div>
+              <div class="formgroup">
+                <label for="email">信箱</label>
+                <input id="email" type="email" placeholder="example@gmail.com" name="email" />
+              </div>
+              <div class="formgroup">
+                <label for="peopleNum">人數</label>
+                <input id="peopleNum" type="number" name="peopleNum" />
+              </div>
+              <div class="formgroup radio">
+                <label for="isVegetarian">是否需要素食</label>
+                <div>
+                  是<input id="yesVege" type="radio" value="true" name="isVegetarian" /> 否<input
+                    id="noVege"
+                    type="radio"
+                    value="false"
+                    name="isVegetarian"
+                  />
+                </div>
+              </div>
+              <div class="formBtn">
+                <input type="button" class="cancelOrderBtn" value="取消" />
+                <input type="button" class="sendOrderBtn" value="送出" />
+              </div>
             </div>
           </form>
         </div>

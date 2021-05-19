@@ -79,7 +79,7 @@
 .banner {
   background-image: url(../images/header_desktop.png);
   @include bg-center;
-  padding: 123px 0;
+  padding: 140px 0;
   @include under-pad {
     background-image: url(../images/Bitmap.png);
   }
@@ -87,7 +87,6 @@
     margin: 0 auto;
     max-width: 460px;
     padding: 22px;
-    margin: 20px auto;
     color: #fff;
     background-color: $banner-bg-color;
     text-align: center;
